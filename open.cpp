@@ -1,17 +1,17 @@
  #include <iostream>
 #include <fstream>
-#include "header.h"
+#include "open.h"
 using namespace std;
 
 open::open() {
 	in.open("C:/Users/User/Desktop/lab2.txt");
-	i = flag = count = 0;
 }
 open::~open() {
 	in.close();
-	i = flag = count = 0;
 }
 void open::program (){
+	int i, count, flag;
+	i = count = flag = 0;
 	if (!in.is_open()) 
 	{
 		cout << "Файл не может быть открыт!\n";
@@ -22,7 +22,7 @@ void open::program (){
 		for (in.get(ch);in; in.get(ch))
 		{
 			if (isalpha(ch) && !flag) flag = 1;
-			if (ch != ' ' && ch != ','&& ch!='.' && flag)
+			if (ch != ' ' && flag)
 			{
 				i++; flag = 0; 
 			}

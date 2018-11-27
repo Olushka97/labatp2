@@ -5,9 +5,10 @@
 #include <sstream>
 
 	class open {
-	public:
+	private:
 		std::ifstream in;
-		char ch; int i, count, flag;
+	public:
+		char ch;
 		open();
 		~open();
 		void program();
