@@ -1,4 +1,4 @@
- #include <iostream>
+ï»¿ #include <iostream>
 #include <fstream>
 #include "open.h"
 using namespace std;
@@ -14,7 +14,7 @@ void open::program (){
 	i = count = flag = 0;
 	if (!in.is_open()) 
 	{
-		cout << "Ôàéë íå ìîæåò áûòü îòêðûò!\n";
+		cout << "Ð¤Ð°Ð¹Ð» Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚!\n";
 		getchar();
 	}
 	else
@@ -35,6 +35,6 @@ void open::program (){
 		}
 		
 	}
-	cout <<"Â ôàéëå "<<count<<" ñëîâ, â êîòîðûõ íå áîëåå 4 áóêâ";
+	cout <<"Ð’ Ñ„Ð°Ð¹Ð»Ðµ "<<count<<" ÑÐ»Ð¾Ð², Ð² ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ñ… Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 4 Ð±ÑƒÐºÐ²";
 		getchar();
 }
